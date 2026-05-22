@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Хакатон Digital Storm 2026</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Хакатон Digital Storm 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <span class="logo__icon">🌩️</span>
+        <span class="logo__text">Digital<span class="accent">Storm</span></span>
+      </a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">О событии</a></li>
+          <li><a class="nav__link" href="#tracks">Направления</a></li>
+          <li><a class="nav__link" href="#registration">Регистрация</a></li>
+        </ul>
+      </nav>
+      <a href="#registration" class="btn btn--primary header__cta">Принять участие</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Главный экран">
+      <div class="container hero__inner">
+        <h1 class="hero__title">
+          Digital<br>
+          <span class="hero__title--accent">Storm</span><br>
+          <span class="hero__title--year">2026</span>
+        </h1>
+        <p class="hero__slogan">
+          72 часа. 3 направления. Бесконечные возможности.
+        </p>
+        <div class="hero__meta">
+          <div class="hero__meta-item">
+            <span class="hero__meta-icon">📅</span>
+            <div>
+              <p class="hero__meta-label">Дата</p>
+              <p class="hero__meta-value">17-20 июня 2026</p>
+            </div>
+          </div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-icon">💻</span>
+            <div>
+              <p class="hero__meta-label">Формат</p>
+              <p class="hero__meta-value">Онлайн</p>
+            </div>
+          </div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-icon">👥</span>
+            <div>
+              <p class="hero__meta-label">Участников</p>
+              <p class="hero__meta-value">до 500 человек</p>
+            </div>
+          </div>
+        </div>
+        <a href="#registration" class="btn btn--primary btn--lg">
+          Зарегистрироваться сейчас
+        </a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
