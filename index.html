@@ -29,6 +29,8 @@
 
   <main>
     <section class="hero" aria-label="Главный экран">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__scanlines" aria-hidden="true"></div>
       <div class="container hero__inner">
         <h1 class="hero__title">
           Digital<br>
@@ -61,9 +63,108 @@
             </div>
           </div>
         </div>
-        <a href="#registration" class="btn btn--primary btn--lg">
+        <a href="#registration" class="btn btn--primary btn--lg hero__cta">
           Зарегистрироваться сейчас
         </a>
+      </div>
+    </section>
+    
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">// 01 / О событии /</p>
+          <h2 class="section-title" id="about-title">Что такое Digital Storm?</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              <strong>Digital Storm 2026</strong> -- это крупнейший технологический хакатон Центральной Азии, объединяющий студентов, разработчиков и исследователей для решения реальных бизнес-задач. За 72 непрерывных часа команды создают прототипы продуктов, которые меняют индустрию.
+            </p>
+            <p>
+              <strong>Наша миссия</strong> -- создать пространство, где технические идеи встречаются с предпринимательским мышлением. Участники получают доступ к менторам из ведущих IT-компаний, облачным ресурсам и профессиональной сети контактов.
+            </p>
+            <p>
+              Победители получают денежные призы, офферы от партнёров и возможность продолжить разработку своих прототипов даже после окончания хакатона.
+            </p>
+          </div>
+
+          <div class="about__stats">
+            <div class="stat-card">
+              <p class="stat-card__number">72</p>
+              <p class="stat-card__label">Часов хакатона</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-card__number">3 000 000 ₸</p>
+              <p class="stat-card__label">Призовой фонд</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-card__number">42</p>
+              <p class="stat-card__label">Ментора</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-card__number">3</p>
+              <p class="stat-card__label">Трека / направления</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tracks section" id="tracks" aria-labelledby="tracks-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">// 02 / Направления /</p>
+          <h2 class="section-title" id="tracks-title">Выбери свой трек</h2>
+        </div>
+        <div class="tracks__grid">
+          <article class="track-card track-card--web" aria-label="Трек: Программирование">
+            <div class="track-card__icon" aria-hidden="true">💻</div>
+            <div class="track-card__tag">Track 01</div>
+            <h3 class="track-card__title">Программирование</h3>
+            <p class="track-card__sub">Web / Mobile Development</p>
+            <p class="track-card__desc">
+              Создавай веб-сервисы и мобильные приложения, решающие реальные проблемы пользователей. Frontend, Backend, Fullstack и т.д. Любой технологический стек приветствуется.
+            </p>
+            <ul class="track-card__tags">
+              <li>React / Vue</li>
+              <li>Node.js</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+          <article class="track-card track-card--infra" aria-label="Трек: Сетевые технологии">
+            <div class="track-card__icon" aria-hidden="true">🌐</div>
+            <div class="track-card__tag">Track 02</div>
+            <h3 class="track-card__title">Сетевые технологии</h3>
+            <p class="track-card__sub">Infrastructure / DevOps</p>
+            <p class="track-card__desc">
+              Проектируй надёжные и масштабируемые инфраструктурные решения. Автоматизация, контейнеризация и облачные платформы - твой арсенал.
+            </p>
+            <ul class="track-card__tags">
+              <li>Docker / Kubernetes</li>
+              <li>CI / CD</li>
+              <li>Linux</li>
+              <li>Cloud (Google / Amazon)</li>
+            </ul>
+          </article>
+          <article class="track-card track-card--ai" aria-label="Трек: Искусственный интеллект">
+            <div class="track-card__icon" aria-hidden="true">🧠</div>
+            <div class="track-card__tag">Track 03</div>
+            <h3 class="track-card__title">Искусственный интеллект</h3>
+            <p class="track-card__sub">AI / Machine Learning</p>
+            <p class="track-card__desc">
+              Строй интеллектуальные системы, от компьютерного зрения до NLP. Применяй современные модели и алгоритмы для решения неординарных задач.
+            </p>
+            <ul class="track-card__tags">
+              <li>Python / PyTorch</li>
+              <li>ML / LLM</li>
+              <li>Computer Vision</li>
+              <li>Data Science</li>
+            </ul>
+          </article>
+
+        </div>
       </div>
     </section>
   </main>
