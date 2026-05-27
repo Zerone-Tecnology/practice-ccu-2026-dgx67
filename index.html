@@ -10,13 +10,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header class="header" id="top">
     <div class="container header__inner">
-      <a href="#" class="header__logo">
+      <a href="#top" class="header__logo">
         <span class="logo__icon">🌩️</span>
         <span class="logo__text">Digital<span class="accent">Storm</span></span>
       </a>
-      <nav class="header__nav" aria-label="Основная навигация">
+      <nav class="header__nav">
         <ul class="nav__list">
           <li><a class="nav__link" href="#about">О событии</a></li>
           <li><a class="nav__link" href="#tracks">Направления</a></li>
@@ -24,11 +25,14 @@
         </ul>
       </nav>
       <a href="#registration" class="btn btn--primary header__cta">Принять участие</a>
+      <button class="burger" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main>
-    <section class="hero" aria-label="Главный экран">
+    <section class="hero">
       <div class="hero__bg-grid" aria-hidden="true"></div>
       <div class="hero__scanlines" aria-hidden="true"></div>
       <div class="container hero__inner">
@@ -37,9 +41,7 @@
           <span class="hero__title--accent">Storm</span><br>
           <span class="hero__title--year">2026</span>
         </h1>
-        <p class="hero__slogan">
-          72 часа. 3 направления. Бесконечные возможности.
-        </p>
+        <p class="hero__slogan">72 часа. 3 направления. Бесконечные возможности.</p>
         <div class="hero__meta">
           <div class="hero__meta-item">
             <span class="hero__meta-icon">📅</span>
@@ -68,14 +70,13 @@
         </a>
       </div>
     </section>
-    
-    <section class="about section" id="about" aria-labelledby="about-title">
+
+    <section class="about section" id="about">
       <div class="container">
         <div class="section-header">
           <p class="section-label">// 01 / О событии /</p>
           <h2 class="section-title" id="about-title">Что такое Digital Storm?</h2>
         </div>
-
         <div class="about__grid">
           <div class="about__text">
             <p>
@@ -88,7 +89,6 @@
               Победители получают денежные призы, офферы от партнёров и возможность продолжить разработку своих прототипов даже после окончания хакатона.
             </p>
           </div>
-
           <div class="about__stats">
             <div class="stat-card">
               <p class="stat-card__number">72</p>
@@ -111,62 +111,146 @@
       </div>
     </section>
 
-    <section class="tracks section" id="tracks" aria-labelledby="tracks-title">
+    <section class="tracks section" id="tracks">
       <div class="container">
         <div class="section-header">
           <p class="section-label">// 02 / Направления /</p>
           <h2 class="section-title" id="tracks-title">Выбери свой трек</h2>
         </div>
         <div class="tracks__grid">
-          <article class="track-card track-card--web" aria-label="Трек: Программирование">
+          <article class="track-card track-card--web">
             <div class="track-card__icon" aria-hidden="true">💻</div>
             <div class="track-card__tag">Track 01</div>
             <h3 class="track-card__title">Программирование</h3>
             <p class="track-card__sub">Web / Mobile Development</p>
-            <p class="track-card__desc">
-              Создавай веб-сервисы и мобильные приложения, решающие реальные проблемы пользователей. Frontend, Backend, Fullstack и т.д. Любой технологический стек приветствуется.
-            </p>
+            <p class="track-card__desc">Создавай веб-сервисы и мобильные приложения, решающие реальные проблемы пользователей. Frontend, Backend, Fullstack — любой технологический стек приветствуется.</p>
             <ul class="track-card__tags">
-              <li>React / Vue</li>
-              <li>Node.js</li>
-              <li>HTML</li>
-              <li>CSS</li>
+              <li>React / Vue</li><li>Node.js</li><li>HTML</li><li>CSS</li>
             </ul>
           </article>
-          <article class="track-card track-card--infra" aria-label="Трек: Сетевые технологии">
+          <article class="track-card track-card--infra">
             <div class="track-card__icon" aria-hidden="true">🌐</div>
             <div class="track-card__tag">Track 02</div>
             <h3 class="track-card__title">Сетевые технологии</h3>
             <p class="track-card__sub">Infrastructure / DevOps</p>
-            <p class="track-card__desc">
-              Проектируй надёжные и масштабируемые инфраструктурные решения. Автоматизация, контейнеризация и облачные платформы - твой арсенал.
-            </p>
+            <p class="track-card__desc">Проектируй надёжные и масштабируемые инфраструктурные решения. Автоматизация, контейнеризация и облачные платформы — твой арсенал.</p>
             <ul class="track-card__tags">
-              <li>Docker / Kubernetes</li>
-              <li>CI / CD</li>
-              <li>Linux</li>
-              <li>Cloud (Google / Amazon)</li>
+              <li>Docker / Kubernetes</li><li>CI / CD</li><li>Linux</li><li>Cloud (Google / Amazon)</li>
             </ul>
           </article>
-          <article class="track-card track-card--ai" aria-label="Трек: Искусственный интеллект">
+          <article class="track-card track-card--ai">
             <div class="track-card__icon" aria-hidden="true">🧠</div>
             <div class="track-card__tag">Track 03</div>
             <h3 class="track-card__title">Искусственный интеллект</h3>
             <p class="track-card__sub">AI / Machine Learning</p>
-            <p class="track-card__desc">
-              Строй интеллектуальные системы, от компьютерного зрения до NLP. Применяй современные модели и алгоритмы для решения неординарных задач.
-            </p>
+            <p class="track-card__desc">Строй интеллектуальные системы — от компьютерного зрения до NLP. Применяй современные модели и алгоритмы для решения неординарных задач.</p>
             <ul class="track-card__tags">
-              <li>Python / PyTorch</li>
-              <li>ML / LLM</li>
-              <li>Computer Vision</li>
-              <li>Data Science</li>
+              <li>Python / PyTorch</li><li>ML / LLM</li><li>Computer Vision</li><li>Data Science</li>
             </ul>
           </article>
-
         </div>
       </div>
     </section>
+
+    <section class="registration section" id="registration">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">// 03 / Регистрация /</p>
+          <h2 class="section-title" id="reg-title">Присоединяйся к Digital Storm</h2>
+          <p class="section-sub">Регистрация открыта до 10 июня 2026 года. Количество мест ограничено.</p>
+        </div>
+        <form class="reg-form" id="regForm">
+          <div class="reg-form__row">
+            <div class="form-group">
+              <label class="form-label" for="firstName">Имя <span class="required" aria-hidden="true">*</span></label>
+              <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Иван" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="lastName">Фамилия <span class="required" aria-hidden="true">*</span></label>
+              <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Иванов" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email <span class="required" aria-hidden="true">*</span></label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="example@example.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="track">Направление <span class="required" aria-hidden="true">*</span></label>
+            <select class="form-input form-select" id="track" name="track" required>
+              <option value="" disabled selected>— Выберите трек —</option>
+              <option value="web">Track 01 — Программирование (Web / Mobile)</option>
+              <option value="infra">Track 02 — Сетевые технологии (Infrastructure / DevOps)</option>
+              <option value="ai">Track 03 — Искусственный интеллект (AI / ML)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="github">Ссылка на GitHub-профиль</label>
+            <input class="form-input" type="url" id="github" name="github" placeholder="https://github.com/username" />
+          </div>
+          <button class="btn btn--primary btn--lg reg-form__submit" type="button">
+            Отправить заявку
+          </button>
+          <p class="reg-form__note">
+            Отправляя заявку, вы соглашаетесь с условиями участия и политикой конфиденциальности.
+          </p>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="header__logo">
+          <span class="logo__icon">🌩️</span>
+          <span class="logo__text">Digital<span class="accent">Storm</span></span>
+        </a>
+        <p class="footer__brand-desc">
+          Крупнейший технологический хакатон Центральной Азии. Алматы, 2026.
+        </p>
+      </div>
+      <div class="footer__links">
+        <h3 class="footer__heading">Навигация</h3>
+        <ul class="footer__nav">
+          <li><a href="#about">О событии</a></li>
+          <li><a href="#tracks">Направления</a></li>
+          <li><a href="#registration">Регистрация</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3 class="footer__heading">Контакты</h3>
+        <ul class="footer__contact-list">
+          <li><span>📧</span><a>digitalstorm@email.com</a></li>
+          <li><span>📞</span><a>+7 (777) 777-77-77</a></li>
+          <li><span>📍</span><span>г. Алматы, пр. Сейфуллина, 521</span></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h3 class="footer__heading">Соцсети</h3>
+        <div class="social-links">
+          <a class="social-link">
+            <img src="img/icons8-telegram-logo-480.png" width="26" height="26" alt="Telegram">
+            Telegram
+          </a>
+          <a class="social-link">
+            <img src="img/icons8-instagram-logo-480.png" width="26" height="26" alt="Instagram">
+            Instagram
+          </a>
+          <a class="social-link">
+            <img src="img/icons8-github-logo-480.png" width="26" height="26" alt="GitHub">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Digital Storm. Все права защищены.</p>
+        <p>Разработано командой ⚡ Digital Storm</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
